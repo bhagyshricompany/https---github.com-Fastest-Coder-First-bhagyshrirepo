@@ -1,0 +1,24 @@
+﻿<head>
+    <!-- Add the Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-pzjw8w+uaYyEZp+s9LvEf0RjcPKWw9S5+Yv/6ji/XCk8qf1jcXp4+ua9z+N9EJYl" crossorigin="anonymous">
+
+    <!-- Other head elements -->
+</head>
+<body>
+
+    <!-- Add the Bootstrap JS script here -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           @* <a class="navbar-brand" asp-area="" asp-controller="Tasks" asp-action="Index">Task Management</a>*@
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Tasks" asp-action="Index">Tasks</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+</body>
